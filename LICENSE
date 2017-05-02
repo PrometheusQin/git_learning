@@ -21,5 +21,6 @@ git log
 git log --pretty=oneline
 git reset --hard HEAD^^
 git reflog
-
+git checkout -- file  撤销到最近一次git add或者git commit时的状态。
+git reset HEAD file  将缓存区的退回到工作区
 
