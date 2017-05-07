@@ -1,0 +1,12 @@
+git stash
+把现场保存起来
+git stash list
+查看保存的信息
+git stash apply 恢复
+git stash drop 删除
+or
+git stash pop  恢复的同时删除
+
+对于多个list
+恢复时可用git stash apply stash@{0}
+
