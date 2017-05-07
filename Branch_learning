@@ -1,0 +1,24 @@
+创建分支dev：
+git checkout -b dev  git checkout命令加上-b参数表示创建并切换
+等价于：
+git branch dev
+git checkout dev
+
+git branch  查看当前分支
+
+git checkout master  切换分支
+
+git merge dev 合并到dev中
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+ 
