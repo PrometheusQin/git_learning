@@ -9,4 +9,5 @@ git stash pop  恢复的同时删除
 
 对于多个list
 恢复时可用git stash apply stash@{0}
-
+ 对于某个不用的还没合并的分支，可用
+git branch -D <name>删除
