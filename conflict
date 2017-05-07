@@ -1,0 +1,26 @@
+git checkout -b feature1
+修改readme.txt
+
+git add
+git commit -m 
+
+git checkout master
+修改readme.txt
+
+git add
+git commit -m
+
+git merge feature1
+
+出现冲突
+
+修改至不冲突为止。
+
+git add
+git commit
+
+git log --graph --pretty=oneline --abbrev-commit
+
+git branch -d feature1
+
+
