@@ -1,0 +1,11 @@
+通常情况下，Git在合并分支会用fast forward模式
+可以强制禁用该模式。--no-ff
+example:
+git git checkout -b dev
+vim readme.txt
+git add readme.txt
+git commit -m "add branch manage strategy"
+git checkout master
+git merge --no-ff -m "merge with no-ff" dev
+git log --graph --pretty=oneline --abbrev-commit
+
