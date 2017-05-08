@@ -1,0 +1,31 @@
+要查看远程库的信息，用git remote
+详细信息 git remote -v
+push branch
+git push origin master 
+or
+git push origin dev
+master分支是主分支，因此要时刻与远程同步；
+
+dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
+
+bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；
+
+feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。
+
+抓取分支：
+git clone git@github.com:账户/库.git
+
+只能看到master分支。
+
+在dev分支上开发，就必须创建远程origin的dev分支到本地，于是他用这个命令创建本地dev分支：
+$ git checkout -b dev origin/dev
+现在，可以在dev上继续修改，然后，时不时地把dev分支push到远程
+
+另有一人也对此分支作出修改，会出现冲突。要把origin/dev最新的提交扒下来。
+git pull
+失败，原因：本地dev与远程dev链接。
+git branch --set-upstream dev origin/dev
+git pull
+出现合并冲突。
+解决后，在push
+
